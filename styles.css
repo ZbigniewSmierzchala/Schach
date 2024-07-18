@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+}
+
+.hero-section {
+    width: 100%;
+    height: 400px;
+    background-image: url('pictures/chess.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);
+}
+
+.hero-text {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.container {
+    text-align: center;
+    margin-top: 50px; /* Increased margin-top to create space */
+    padding-bottom: 50px; /* Add space at the bottom of the container */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.topics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.topic {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.topic a {
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topic img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.topic span {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.topic .explanation {
+    display: none;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.topic:hover {
+    transform: scale(1.05);
+}
+
+.topic:hover .explanation {
+    display: block;
+}
+.container {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 40px; /* Add space at the bottom of the container */
+}
+
+.bottom-section {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 40px; /* Add space above the bottom section */
+}
+
+
+.bottom-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.bottom-section p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.bottom-section .button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    width: 180px; /* Fixed width for all buttons */
+    text-align: center;
+}
+.bottom-section .button:hover {
+    background-color: #0056b3;
+}
